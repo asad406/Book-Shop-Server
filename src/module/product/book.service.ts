@@ -11,8 +11,13 @@ const getAllBooks = async () => {
     const result = await Book.find()
     return result
 }
+const getSingleBooksFromDB = async (bookID: string) => {
+    const result = await Book.findById(bookID)
+    return result
+}
 
 export const BookService ={
     createBookToDB,
-    getAllBooks
+    getAllBooks,
+    getSingleBooksFromDB,
 }

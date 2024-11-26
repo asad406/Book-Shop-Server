@@ -33,8 +33,26 @@ const getBooks = async (req: Request, res: Response) => {
         })
     }
 }
+const getSingleBook = async (req: Request, res: Response) => {
+    try{
+        const id = req.params.bookID
+        // console.log(id);
+        const data = await BookService.getSingleBooksFromDB(id)
+        res.status(200).json({
+            message: "Retrieves one books",
+            success: true,
+            data
+        })
+    } catch (error) {
+        res.status(400).json({
+            message: "something went wrong",
+            success: false
+        })
+    }
+}
 
 export const BookController = {
     createBook,
-    getBooks
+    getBooks,
+    getSingleBook
 }
