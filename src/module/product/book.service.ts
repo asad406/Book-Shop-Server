@@ -7,6 +7,12 @@ const createBookToDB = async (book: IBook) => {
     return result
 }
 
+const getAllBooks = async () => {
+    const result = await Book.find()
+    return result
+}
+
 export const BookService ={
-    createBookToDB
+    createBookToDB,
+    getAllBooks
 }
