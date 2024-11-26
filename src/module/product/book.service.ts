@@ -16,8 +16,15 @@ const getSingleBooksFromDB = async (bookID: string) => {
     return result
 }
 
+const updateBookToDB = async(bookID:string, payload: Partial<IBook>) => {
+    const option = {new: true, runValidators: true} //By default, Mongoose does not run validation on updates, only on document creation. Setting runValidators: true forces Mongoose to validate the update operation against the schema.
+    const result = await Book.findByIdAndUpdate(bookID,payload,option)
+    return result
+}
+
 export const BookService ={
     createBookToDB,
     getAllBooks,
     getSingleBooksFromDB,
+    updateBookToDB
 }
