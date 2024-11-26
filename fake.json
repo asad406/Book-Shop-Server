@@ -1,0 +1,47 @@
+[
+  {
+    "title": "The Enchanted Forest",
+    "author": "Alice Green",
+    "price": 12.99,
+    "category": "Fiction",
+    "description": "A magical journey through an enchanted forest filled with mythical creatures.",
+    "quantity": 150,
+    "inStock": true
+  },
+  {
+    "title": "Exploring the Cosmos",
+    "author": "Dr. James Nielson",
+    "price": 22.5,
+    "category": "Science",
+    "description": "An in-depth look at the wonders of the universe, from black holes to distant galaxies.",
+    "quantity": 75,
+    "inStock": true
+  },
+  {
+    "title": "Mindset Mastery",
+    "author": "Jane Roberts",
+    "price": 18.0,
+    "category": "SelfDevelopment",
+    "description": "Strategies and tips to develop a growth mindset and achieve personal success.",
+    "quantity": 200,
+    "inStock": true
+  },
+  {
+    "title": "Whispers of the Soul",
+    "author": "Emily Hart",
+    "price": 15.5,
+    "category": "Poetry",
+    "description": "A collection of heart-touching poems that explore the depths of human emotion.",
+    "quantity": 120,
+    "inStock": true
+  },
+  {
+    "title": "Paths to Enlightenment",
+    "author": "Father John",
+    "price": 20.0,
+    "category": "Religious",
+    "description": "A spiritual guide to finding peace and enlightenment in everyday life.",
+    "quantity": 90,
+    "inStock": true
+  }
+]
