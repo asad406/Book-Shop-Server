@@ -19,6 +19,10 @@ const bookSchema = new Schema<IBook>({
         required: [true, 'Category is required'],
         enum: ['Fiction', 'Science', 'SelfDevelopment', 'Poetry', 'Religious']
     },
+    quantity: {
+        type: Number,
+        required: true
+    },
     description: {
         type: String,
         required: [true, 'Category is required']
