@@ -1,0 +1,32 @@
+[
+  {
+    "email": "customer1@example.com",
+    "product": "648a45e5f0123c45678d9012",
+    "quantity": 3,
+    "totalPrice": 45
+  },
+  {
+    "email": "customer2@example.com",
+    "product": "648a45e5f0123c45678d9013",
+    "quantity": 1,
+    "totalPrice": 15
+  },
+  {
+    "email": "customer3@example.com",
+    "product": "648a45e5f0123c45678d9014",
+    "quantity": 2,
+    "totalPrice": 30
+  },
+  {
+    "email": "customer4@example.com",
+    "product": "648a45e5f0123c45678d9015",
+    "quantity": 5,
+    "totalPrice": 75
+  },
+  {
+    "email": "customer5@example.com",
+    "product": "648a45e5f0123c45678d9016",
+    "quantity": 4,
+    "totalPrice": 60
+  }
+]
