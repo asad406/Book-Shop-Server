@@ -1,4 +1,6 @@
 export interface IBook {
+    password: string,
+    id: number,
     title: string,
     author: string,
     price: number,    
@@ -6,4 +8,5 @@ export interface IBook {
     description: string,
     quantity: number,
     inStock: boolean
+    isDeleted: boolean
 }

@@ -11,7 +11,7 @@ const getAllBooks = async () => {
     const result = await Book.find()
     return result
 }
-const getSearchBookFromDB = async (searchTerm: any) =>{
+const getSearchBookFromDB = async (searchTerm: any) => {
     const result = await Book.find(searchTerm)
     // console.log(result);
     return result;
@@ -21,18 +21,18 @@ const getSingleBooksFromDB = async (bookID: string) => {
     return result
 }
 
-const updateBookToDB = async(bookID:string, payload: Partial<IBook>) => {
-    const option = {new: true, runValidators: true} //By default, Mongoose does not run validation on updates, only on document creation. Setting runValidators: true forces Mongoose to validate the update operation against the schema.
-    const result = await Book.findByIdAndUpdate(bookID,payload,option)
+const updateBookToDB = async (bookID: string, payload: Partial<IBook>) => {
+    const option = { new: true, runValidators: true } //By default, Mongoose does not run validation on updates, only on document creation. Setting runValidators: true forces Mongoose to validate the update operation against the schema.
+    const result = await Book.findByIdAndUpdate(bookID, payload, option)
     return result
 }
 
-const deleteBooks = async (bookID: string) => {
-    const result = await Book.findByIdAndDelete(bookID)
+const deleteBooks = async (_id: string) => {
+    const result = await Book.updateOne({ _id }, { isDeleted: true })
     return result
 }
 
-export const BookService ={
+export const BookService = {
     createBookToDB,
     getAllBooks,
     getSearchBookFromDB,

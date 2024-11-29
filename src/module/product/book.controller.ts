@@ -93,12 +93,14 @@ const deleteBooks = async (req: Request, res: Response) => {
         const data = await BookService.deleteBooks(id)
         res.status(200).json({
             message: "Book item deleted successfully",
-            success: true
+            success: true,
+            data
         })
     } catch (error) {
         res.status(404).json({
             message: "Something went wrong",
-            success: false
+            success: false,
+            error
         })
     }
 }

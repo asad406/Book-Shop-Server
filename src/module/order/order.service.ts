@@ -20,6 +20,7 @@ const calculateTotalRevenue = async()=>{
         }
     ])
     const totalRevenue = revenueData[0]?.totalRevenue || 0
+    console.log(revenueData);
     return {totalRevenue : totalRevenue}
 }
 export const OrderService = {
